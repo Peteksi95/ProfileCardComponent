@@ -1,0 +1,92 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-position-x: 135%, -35%;
+    background-position-y: -125%, 200%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    background-color: white;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+h1, h2 {
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+span, p {
+    color: hsl(0, 0%, 59%);
+}
+
+span {
+    margin-left: 0.5em;
+}
+
+p {
+    font-weight: 700;
+}
+
+img {
+    border: solid 5px white;
+    border-radius: 50%;
+    margin-top: 5.5em;
+}
+
+.line {
+    height: 1px;
+    background-color: hsl(0, 0%, 59%);
+    opacity: 40%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.item1, .item2, .item3 p {
+    font-size: 12px;
+}
+
+.item2 {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+        background-size: 150%;
+        background-position-x: 10em, -20em;
+        background-position-y: 17.5em, -22.5em;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
